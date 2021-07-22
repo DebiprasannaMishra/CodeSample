@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelApp", "ExcelApp\ExcelA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.ExcelApplication", "1.ExcelApplication", "{8D0627F6-9BE7-4D5C-9E8F-BC138FE1E7A2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.WebApiCore", "2.WebApiCore", "{571FC924-FF7C-4500-99E1-FF55A313996A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.WebApiWpfClient", "3.WebApiWpfClient", "{E4479376-32C3-474A-AB1C-8CB94CE6A232}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{F32595DA-26B5-4C6F-B766-498BEF78ACDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{594FD9D4-4C37-4AB0-AB67-B27B055525CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +25,22 @@ Global
 		{3685A041-B311-40D5-9C82-BC0D3F749545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3685A041-B311-40D5-9C82-BC0D3F749545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3685A041-B311-40D5-9C82-BC0D3F749545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32595DA-26B5-4C6F-B766-498BEF78ACDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32595DA-26B5-4C6F-B766-498BEF78ACDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32595DA-26B5-4C6F-B766-498BEF78ACDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32595DA-26B5-4C6F-B766-498BEF78ACDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594FD9D4-4C37-4AB0-AB67-B27B055525CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594FD9D4-4C37-4AB0-AB67-B27B055525CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594FD9D4-4C37-4AB0-AB67-B27B055525CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594FD9D4-4C37-4AB0-AB67-B27B055525CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3685A041-B311-40D5-9C82-BC0D3F749545} = {8D0627F6-9BE7-4D5C-9E8F-BC138FE1E7A2}
+		{F32595DA-26B5-4C6F-B766-498BEF78ACDD} = {571FC924-FF7C-4500-99E1-FF55A313996A}
+		{594FD9D4-4C37-4AB0-AB67-B27B055525CA} = {E4479376-32C3-474A-AB1C-8CB94CE6A232}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83BD8ADC-F2FE-4936-96E1-851452F6D582}
