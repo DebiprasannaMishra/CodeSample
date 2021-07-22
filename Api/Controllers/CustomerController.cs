@@ -7,6 +7,7 @@ using Api.Data;
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerRepository customerRepository;
@@ -43,7 +44,7 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Customer> Post([FromBody] Customer customer)
+        public ActionResult<Customer> Post(Customer customer)
         {
             try
             {
@@ -56,7 +57,7 @@ namespace Api.Controllers
         }
 
         [HttpPut]
-        public ActionResult<Customer> Put([FromBody] Customer customer)
+        public ActionResult<Customer> Put(Customer customer)
         {
             try
             {

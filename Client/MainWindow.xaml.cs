@@ -23,13 +23,13 @@ namespace Client
 
         private void GetCustomerList()
         {
-            HttpClient apiClient = new HttpClient();
+            var apiClient = new HttpClient();
             apiClient.BaseAddress = new Uri("http://localhost:39482");
             apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             try
             {
-                HttpResponseMessage response = apiClient.GetAsync("api/customer").Result;
+                var response = apiClient.GetAsync("api/customer").Result;
                 if (response.IsSuccessStatusCode)
                     dgCustomer.ItemsSource = response.Content.ReadAsAsync<IEnumerable<Customer>>().Result;
                 else
@@ -40,7 +40,7 @@ namespace Client
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            HttpClient apiClient = new HttpClient();
+            var apiClient = new HttpClient();
             apiClient.BaseAddress = new Uri("http://localhost:39482");
             apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -74,7 +74,7 @@ namespace Client
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            HttpClient apiClient = new HttpClient();
+            var apiClient = new HttpClient();
             apiClient.BaseAddress = new Uri("http://localhost:39482");
             apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -83,7 +83,7 @@ namespace Client
 
             try
             {
-                HttpResponseMessage response = apiClient.DeleteAsync(url).Result;
+                var response = apiClient.DeleteAsync(url).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     MessageBox.Show("User Deleted");
@@ -97,7 +97,7 @@ namespace Client
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            HttpClient apiClient = new HttpClient();
+            var apiClient = new HttpClient();
             apiClient.BaseAddress = new Uri("http://localhost:39482");
             apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -106,7 +106,7 @@ namespace Client
 
             try
             {
-                HttpResponseMessage response = apiClient.GetAsync(url).Result;
+                var response = apiClient.GetAsync(url).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     var customer = response.Content.ReadAsAsync<Customer>().Result;
@@ -126,7 +126,7 @@ namespace Client
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            HttpClient apiClient = new HttpClient();
+            var apiClient = new HttpClient();
             apiClient.BaseAddress = new Uri("http://localhost:39482");
             apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
